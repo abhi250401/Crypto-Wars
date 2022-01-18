@@ -9,7 +9,8 @@ const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery(10);
     console.log(data);
     const globalStats = data?.data?.stats;
-    if (isFetching)
+    console.log(globalStats);
+    if (!globalStats)
         return (
             <div style={{ display: "flex", justifyContent: "center", color: "white", alignItems: "center", height: "100vh" }}><h1 style={{ color: "white" }}>Loading ...</h1></div>
         );
