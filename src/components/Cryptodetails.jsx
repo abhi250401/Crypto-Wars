@@ -45,7 +45,7 @@ const CryptoDetails = () => {
         <Col className="coin-detail-container" style={{ color: "white" }}>
             <Col className="coin-heading-container">
                 <Title level={2} className="coin-name">
-                    {data?.data?.coin.name} ({data?.data?.coin.slug}) Price
+                    {data?.data?.coin.name} ({data?.data?.coin.symbol}) Price
                 </Title>
                 <p>{cryptoDetails.name} live price in US Dollar (USD). View value statistics, market cap and supply.</p>
             </Col> <Select theme="dark" defaultValue="7d" className="select-timeperiod" placeholder="Select Timeperiod" onChange={(value) => setTimeperiod(value)}>
